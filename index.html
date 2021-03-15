@@ -22,25 +22,34 @@
 
         <div class="form__container">
             <form class="tipCalc">
-            
-                <label for="billAmt">Bill Amount</label>
-                <input type="number" name="billAmt" id="billAmt" min="0" value="0" step=".01" onfocus="this.value=''"required>
-    
-                <label for="tipPercentage">Tip %</label> 
-                <select name="tipPercentage" id="tipPercentage">
-                    <option value=".05">5%</option>
-                    <option value=".10">10%</option>
-                    <option selected value=".15">15%</option>
-                    <option value=".20">20%</option>
-                    <option value=".25">25%</option>
-                </select>
+                <div>
+                    <label for="billAmt">Bill Amount</label>
+                    <i class="fas fa-dollar-sign"></i>
+                    <input type="number" name="billAmt" id="billAmt" min="0" value="0" step=".01" onfocus="this.value=''"required>
+                </div>
                 
-                <label for="tipAmt">Tip Amount</label> 
-                <input type="text" name="tipAmt" id="tipAmt" value="" placeholder="0.00" disabled>
-                
-                <label for="total">Total</label> 
-                <input type="text" name="total" id="total" value="" placeholder="0.00" disabled>
-    
+                <div>
+                    <label for="tipPercentage">Tip % </label> 
+                    <select name="tipPercentage" id="tipPercentage">
+                        <option value=".05">5%</option>
+                        <option value=".10">10%</option>
+                        <option selected value=".15">15%</option>
+                        <option value=".20">20%</option>
+                        <option value=".25">25%</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="tipAmt">Tip Amount</label> 
+                    <i class="fas fa-dollar-sign"></i>
+                    <input type="text" name="tipAmt" id="tipAmt" value="" placeholder="0.00" disabled>
+                </div>
+
+                <div>
+                    <label for="total">Total</label> 
+                    <i class="fas fa-dollar-sign"></i>
+                    <input type="text" name="total" id="total" value="" placeholder="0.00" disabled>
+                </div>
             </form>
         </div>
         
